@@ -12,7 +12,7 @@ namespace Gradebook
             }
             else
             {
-                Console.WriteLine("Hello, Stranger Danger");
+                Console.WriteLine("Hello");
             }
         }
     }
