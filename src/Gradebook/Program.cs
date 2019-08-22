@@ -6,9 +6,14 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            if(args.Length > 0) 
+            var x = 20.1;
+            var y = 13.5;
+            var result = x + y;
+            Console.WriteLine(result);
+
+            if(args.Length > 0)
             {
-                Console.WriteLine($"Hello, {args[0]}!");
+                Console.WriteLine($"Hello, {args[0]}!"); 
             }
             else
             {
