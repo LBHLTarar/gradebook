@@ -20,7 +20,7 @@ namespace Gradebook
             {
                 result += number/grades.Count;
             }
-            Console.WriteLine($"The average grade is {result:N2}");
+            Console.WriteLine($"The average grade is {result:N1}");
         }
     }
 }
