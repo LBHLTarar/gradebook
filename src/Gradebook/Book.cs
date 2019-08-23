@@ -8,14 +8,14 @@ namespace Gradebook
         {
             grades = new List<double>();
             this.name = name;
-        }
- 
-        public void AddGrade(double grade)
+        } 
+        static public void AddGrade(double grade)
         {
             grades.Add(grade);
         } 
-        private List<double> grades;
-        private string name;
+ 
+        static private List<double> grades;
+        private string name; 
     }
 
  }  
