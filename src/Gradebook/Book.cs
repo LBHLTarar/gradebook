@@ -8,12 +8,12 @@ namespace Gradebook
         {
             grades = new List<double>();
         }
-        
+
         public void AddGrade(double grade)
         {
             grades.Add(grade);
         } 
-        List<double> grades;
+        private List<double> grades;
     }
 
  }  
