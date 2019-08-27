@@ -1675,6 +1675,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Gradebook/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Gradebook.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gradebook.dll": {}
+        }
       }
     }
   },
@@ -5848,10 +5858,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Gradebook/1.0.0": {
+      "type": "project",
+      "path": "../../src/Gradebook/Gradebook.csproj",
+      "msbuildProject": "../../src/Gradebook/Gradebook.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Gradebook >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
       "Microsoft.NETCore.App >= 2.2.0",
       "xunit >= 2.4.0",
@@ -5885,7 +5901,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj": {
+              "projectPath": "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

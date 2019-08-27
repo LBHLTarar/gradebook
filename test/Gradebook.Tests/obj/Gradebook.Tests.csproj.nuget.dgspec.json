@@ -4,6 +4,56 @@
     "/Users/ltarar/Dropbox/gradebook/test/Gradebook.Tests/Gradebook.Tests.csproj": {}
   },
   "projects": {
+    "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj",
+        "projectName": "Gradebook",
+        "projectPath": "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj",
+        "packagesPath": "/Users/ltarar/.nuget/packages/",
+        "outputPath": "/Users/ltarar/Dropbox/gradebook/src/Gradebook/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/ltarar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "/Users/ltarar/Dropbox/gradebook/test/Gradebook.Tests/Gradebook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +77,11 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj": {
+                "projectPath": "/Users/ltarar/Dropbox/gradebook/src/Gradebook/Gradebook.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
