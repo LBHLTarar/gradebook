@@ -7,11 +7,16 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            var book = new Book("Lia's Grade Book");
+            var book = new Book("My Grade Book");
             book.AddGrade(84.6);
             book.AddGrade(78.8);
             book.AddGrade(91.5);
-            book.ShowStatistics();
+
+            var stats = book.GetStatistics();
+
+            Console.WriteLine($"The highest grade is {stats.High}");
+            Console.WriteLine($"The lowest grade is {stats.Low}");
+            Console.WriteLine($"The average grade is {stats.Average:N1}");
         }
     }
-}
+} 
